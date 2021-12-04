@@ -342,10 +342,12 @@ class ClientSignUp extends Component {
                     clicked={(event) => this.clientSignUpHandler(event)}
                     name={this.props.pending ? <Spinner /> : "Sign Up"}
                 />
-                <h3>
-                    Already registered!!??{" "}
-                    <div onClick={this.props.change}>Sign in here!</div>
-                </h3>
+                <Button
+                    fill
+                    config={{ type: "button" }}
+                    clicked={this.props.change}
+                    name="Sign In"
+                />
             </form>
         );
     }
