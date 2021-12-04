@@ -93,25 +93,6 @@ class CustomerSignUp extends Component {
                 valid: false,
                 touched: false,
             },
-            cusines: {
-                id: "6",
-                elementType: "input",
-                label: "Cusines",
-                elementConfig: {
-                    type: "text",
-                    placeholder: "Value",
-                },
-                tagHandler: true,
-                selected: [],
-                value: "",
-                actions: true,
-                isTag:true,
-                validation: {
-                    required: true,
-                },
-                valid: false,
-                touched: false,
-            },
         },
 
         formIsValid: false,

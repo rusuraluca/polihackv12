@@ -6,8 +6,9 @@
 
 .Restaurants h2 {
     font-weight: 500;
-    color: #044999;
+    color: #000;
     margin-bottom: 5rem;
+    text-align: center;
 }
 
 .Card {
