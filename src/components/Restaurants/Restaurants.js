@@ -34,11 +34,11 @@ class Restaurants extends Component {
         let counter = 0;
         this.props.clients.forEach((client) =>{
                 counter = counter + 1;
-                if (counter >= 25) {
+                if (counter >= 31) {
                 restaurants.push({
                     id: client.id,
                     name: client.restaurantName,
-                    cusines: client.cusines,
+                    locationAddress: client.locationAddress,
                 })
                 
                 ++counter;
@@ -54,6 +54,7 @@ class Restaurants extends Component {
                             <RestaurantCard
                                 name={restaurant.name}
                                 cusines={restaurant.cusines}
+                                locationAddress={restaurant.locationAddress}
                                 clicked={() =>
                                     this.props.menuHandler(restaurant)
                                 }

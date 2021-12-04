@@ -93,6 +93,21 @@ class CustomerSignUp extends Component {
                 valid: false,
                 touched: false,
             },
+            locationAddress: {
+                id: "6",
+                elementType: "input",
+                label: "Address",
+                elementConfig: {
+                    type: "text",
+                    placeholder: "Value",
+                },
+                value: "",
+                validation: {
+                    required: true,
+                },
+                valid: false,
+                touched: false,
+            },
         },
 
         formIsValid: false,
@@ -225,6 +240,8 @@ class CustomerSignUp extends Component {
                 continue;
             }
             data[field] = this.state.primaryDetails[field].value;
+            console.log(data[field]);
+
         }
 
         data["accountType"] = "Restaurant";

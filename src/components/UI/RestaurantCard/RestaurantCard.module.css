@@ -41,8 +41,12 @@
 }
 
 .Cusines {
+    margin-top: 4rem;
+    vertical-align: center;
+    /* text-align: center; */
+    align-items: center;
     display: block;
-    padding: 0 0 1rem 0;
+    padding: 0px 0 1rem 0;
 }
 
 .Cusines h5 {

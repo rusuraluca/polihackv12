@@ -7,21 +7,22 @@ import dummy from "../../../assets/Background/dummyRestaurant.jpg";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 
 export default function RestaurantCard(props) {
+    console.log(props.name);
     return (
         <div className={classes.Card} onClick={props.clicked}>
             <div className={classes.Header}>
                 {props.imgSrc ? (
-                    <img src="" alt={props.name} />
+                    <img src={require("../../../assets/Background/" + props.name + ".jpeg")} alt={props.name} />
                 ) : (
-                    <img src={dummy} alt={props.name} />
+                    <img src={require("../../../assets/Background/" + props.name + ".jpeg")} alt={props.name} />
                 )}
             </div>
             <span className={classes.Title}>{props.name}</span>
             <div className={classes.Cusines}>
-                <h5>Adress</h5>
+                <h5>Address</h5>
                 <div className={classes.Cv}>
                     <FontAwesomeIcon className={classes.icon} icon={faLocationArrow} />
-                    <div className={classes.Location}>Strada Popa Tatu 94, București</div>
+                    <div className={classes.Location}>Unspecified</div>
                 </div>
             </div>
         </div>
