@@ -126,7 +126,6 @@ class RestaurantMenu extends Component {
 
         return (
             <div className={classes.RestaurantMenu}>
-                <h2>Menu for {" "}{restaurant.name}</h2>
                 <div className={classes.Header}>
                     {restaurant.img ? (
                         <img src={restaurant.img} alt="" />
@@ -134,6 +133,7 @@ class RestaurantMenu extends Component {
                         <img src={dummy} />
                     )}
                 </div>
+                <h2>Menu for {" "}{restaurant.name}</h2>
                 {productItems}
             </div>
         );
