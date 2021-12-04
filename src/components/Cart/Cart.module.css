@@ -6,7 +6,7 @@
 
 .RestaurantMenu h2 {
     font-weight: 500;
-    color: #044999;
+    color: rgb(0, 0, 0);
     margin-bottom: 5rem;
     text-transform: capitalize;
 }
@@ -25,4 +25,10 @@
     padding: 0.5rem 1rem;
     margin: 0 2rem;
     box-shadow: 0 2px 16px -2px rgba(0, 0, 0, 0.473);
+}
+
+.center{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 45%;
 }
