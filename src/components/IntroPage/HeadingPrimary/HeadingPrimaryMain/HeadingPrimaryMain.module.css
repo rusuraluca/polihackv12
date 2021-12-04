@@ -1,0 +1,20 @@
+.HeadingPrimaryMain {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden !important;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .HeadingPrimaryMain {
+        font-size: 4.3rem;
+    }
+}
+
+@media only screen and (max-width:56.25em) {
+    .title {
+        font-size: 4.3rem;
+        margin-bottom: 2rem !important;
+    }
+}
