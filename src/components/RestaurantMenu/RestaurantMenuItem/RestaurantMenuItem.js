@@ -8,7 +8,7 @@ export default function RestaurantMenuItem(props) {
 
     return (
         <div className={classes.Item}>
-            <div className={classes.Leading}>
+            <div className={classes.TextShadow}>
                 {props.product.image ? (
                     <img src={props.product.image} alt={props.product.name} />
                 ) : null}

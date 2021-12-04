@@ -4,10 +4,39 @@
     height: 10rem;
     justify-content: space-between;
     padding: 2rem 0;
+    border-radius: 50px 15px;
+    border: 2px solid #A0E557;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 60px;
+    padding-left: 60px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    animation-duration: 0.6s;
+    animation-name: slidein;
+    transition: all .3s ease;
 }
+
+.TextShadow{
+    text-shadow: rgba(0, 0, 0, 0.15) 3px 3px 4px;
+}
+
+.Item:hover {box-shadow: #A0E557 8px 8px 8px;}
 
 .Actions {
     display: grid;
     grid-auto-flow: column;
     column-gap: 2rem;
 }
+
+  
+  @keyframes slidein {
+    from {
+      margin-left: 40%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
