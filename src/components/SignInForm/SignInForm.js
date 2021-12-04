@@ -20,10 +20,10 @@ class SignInForm extends Component {
             username: {
                 id: "1",
                 elementType: "input",
-                label: "User Name",
+                label: "Username",
                 elementConfig: {
                     type: "text",
-                    placeholder: "Value",
+                    placeholder: "Enter your username",
                 },
                 value: "",
                 validation: {
@@ -38,7 +38,7 @@ class SignInForm extends Component {
                 label: "Password",
                 elementConfig: {
                     type: "password",
-                    placeholder: "Value",
+                    placeholder: "Enter your password",
                 },
                 value: "",
                 validation: {
@@ -55,7 +55,7 @@ class SignInForm extends Component {
                     type: "text",
                     placeholder: "Value",
                     option: [
-                        { value: "", displayValue: "Value" },
+                        
                         {
                             value: "Customer",
                             displayValue: "Customer",
@@ -191,10 +191,12 @@ class SignInForm extends Component {
                     clicked={(event) => this.signInHandler(event)}
                     name={this.props.pending ? <Spinner /> : "Sign In"}
                 />
-                <h3>
-                    New foodie!!??{" "}
-                    <div onClick={this.props.change}>Register here!</div>
-                </h3>
+                <Button
+                    fill
+                    config={{ type: "button" }}
+                    clicked={this.props.change}
+                    name="Register"
+                />
             </form>
         );
     }
