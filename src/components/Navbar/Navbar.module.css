@@ -53,6 +53,11 @@
 
 .Logo {
     max-width: 10rem;
+    margin-left: 10rem;
+}
+
+.Logo:hover {
+    transform: scale(1.2);
 }
 
 .User {
@@ -104,4 +109,10 @@
     .SignIn span {
         display: none;
     }
+}
+
+.Location {
+    font-weight: bolder;
+    margin-top: 0.5rem;
+    font-family: 'Arial';
 }

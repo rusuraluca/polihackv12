@@ -31,12 +31,19 @@ class Restaurants extends Component {
         }
         
         const restaurants = [];
-        this.props.clients.forEach((client) =>
-            restaurants.push({
-                id: client.id,
-                name: client.restaurantName,
-                cusines: client.cusines,
-            })
+        let counter = 0;
+        this.props.clients.forEach((client) =>{
+                counter = counter + 1;
+                if (counter >= 25) {
+                restaurants.push({
+                    id: client.id,
+                    name: client.restaurantName,
+                    cusines: client.cusines,
+                })
+                
+                ++counter;
+            }
+        }
         );
         return (
             <div className={classes.Restaurants}>

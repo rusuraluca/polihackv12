@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import classes from "./Navbar.module.css";
 import NavigationItem from "./NavigationItem/NavigationItem";
-
+import logo from "../../assets/Background/SNOODres-01.png"
 import { getUser } from "../../store/reducer";
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,9 +27,10 @@ class Navbar extends Component {
             <div className={classes.Navbar}>
                 <div className={classes["Item"]}>
                     <a href="/">
-                        <NavigationItem reload link="/" logo name="FoodShala" />
+                        <img src={logo} alt="Logo" className={classes["Logo"]}/>
                     </a>
                 </div>
+                <div className={classes["Location"]}> Deliver to: Cluj, Cluj-Napoca</div>
                 <div className={classes["Item"]}>
                     {!this.props.user ? (
                         <div
