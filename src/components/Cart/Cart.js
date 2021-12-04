@@ -11,6 +11,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { addItemToCart, clearCart } from "../../store/action";
 import checkoutAction from "../../bloc/checkout";
+import cart from "../../assets/Background/empty-cart.png";
 
 import { withRouter } from "react-router-dom";
 
@@ -195,16 +196,20 @@ class Cart extends Component {
 
         if (productItems.length === 0) {
             productItems = (
-                <h2>
-                    Please Add Items to Cart{" "}
+                <div className={classes.center}>
+                    <img src={cart}/>
+                    <h2>
+                        Your cart is empty{" "}
+                    </h2>
+                    <h2>
                     <span onClick={this.goToMenu}>Go To Menu !</span>
-                </h2>
+                    </h2>
+                </div>
             );
         }
 
         let mainContent = (
             <div className={classes.RestaurantMenu}>
-                <h2>Cart</h2>
                 {productItems}
                 {productItems.length ? (
                     <React.Fragment>
