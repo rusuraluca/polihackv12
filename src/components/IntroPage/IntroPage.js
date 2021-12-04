@@ -59,7 +59,7 @@ export default class IntroPage extends Component {
                         <Button
                             disabled={this.state.disable}
                             clicked={this.props.onChange}
-                            name="READY TO FIGHTFOOD WASTE?"
+                            name="READY TO FIGHT FOOD WASTE?"
                         />
                     }
                 />
