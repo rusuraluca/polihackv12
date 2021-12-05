@@ -1,6 +1,4 @@
-# FoodShala 
-        FoodShala is food ordering Web Application, which mainly targets foodies and restaurants arround the world.
-## [Link to the App](https://foodshala.netlify.com)
+# SNOOD
 
 ## Steps to run locally
 
