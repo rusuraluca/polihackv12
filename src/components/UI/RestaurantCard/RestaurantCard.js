@@ -22,7 +22,7 @@ export default function RestaurantCard(props) {
                 <h5>Address</h5>
                 <div className={classes.Cv}>
                     <FontAwesomeIcon className={classes.icon} icon={faLocationArrow} />
-                    <div className={classes.Location}>Unspecified</div>
+                    <div className={classes.Location}></div>
                 </div>
             </div>
         </div>
