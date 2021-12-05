@@ -55,7 +55,7 @@ class SignInForm extends Component {
                     type: "text",
                     placeholder: "Value",
                     option: [
-                        
+                        { value: "", displayValue: "Choose type" },
                         {
                             value: "Customer",
                             displayValue: "Customer",
